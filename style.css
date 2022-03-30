@@ -1,0 +1,124 @@
+body{
+	margin:0 auto;
+	padding:0 auto;
+	background-image: url('work.jpg');
+	background-repeat: none;
+	background-size: cover;
+	
+}
+.content-header{
+	width:500px;
+	height:100vh;
+	box-shadow: -30px 10px 30px 20px rgba(0,0,0,.20);
+	padding:20px;
+	margin:0 auto;
+	position: relative;
+	
+	background: rgb(46,33,255);
+    background: linear-gradient(90deg, rgba(46,33,255,0.2665441176470589) 0%, rgba(0,212,255,0.2553396358543417) 100%);
+}
+.user{
+	position: relative;
+	top:30px;
+}
+#submit{
+	position: relative;
+	top:20px;
+}
+input{
+	margin-top:10px;
+}
+#img{
+	position: relative;
+	right:10px;
+	bottom:20px;
+
+}
+.menu{
+	position: relative;
+	left:300px;
+
+}
+li{
+	display:inline;
+	margin-left:10px;
+}
+#Page1{
+	height:600px;
+	animation: pageone 1s;
+	transition:1s;
+	height:100vh;
+}
+#Page2{
+	animation: pagetwo 1s;
+	height:100vh;
+}
+
+@keyframes pageone{
+	0%{
+		opacity:0;
+		position:relative;
+		left:500px;
+		transition:1s;
+	}
+	100%{
+		opacity:100;
+		transition:1s;
+		left:1px;
+	}
+}
+@keyframes pagetwo{
+	0%{
+		opacity:0;
+		position:relative;
+		right:500px;
+		transition:1s;
+	}
+	100%{
+		opacity:100;
+		transition:1s;
+		right:1px;
+	}
+}
+#submit{
+	transition:0.5s;
+	box-shadow: -5px -10px 10px 5px rgba(0,0,0,.30);
+}
+#submit:hover{
+	transition:0.2s;
+	border-radius:20px;
+	box-shadow: -5px 5px 10px 5px rgba(0,0,0,.50);
+}
+#o{
+	transition:0.5s;
+}
+#t{
+	transition:0.5s;
+
+}
+#o:hover{
+	color: #12a0ff;
+	transition:0.2s;
+}
+#t:hover{
+	color: #12a0ff;
+	transition:0.2s;
+}
+@media only screen and (max-width: 600px) {
+  body {
+  	background-image: url('road.jpg');
+    background-repeat: none;
+	background-size: cover;
+	margin:0 auto;
+	padding:0 auto;
+	min-height:0;
+  }
+  .content-header{
+  	width:320px;
+  	height:400px;
+
+  }
+  .menu{
+  	left:150px;
+  }
+}

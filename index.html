@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="show('Page2','Page1')">
+<script>
+
+    function show(shown, hidden) {
+      	document.getElementById(shown).style.display='block';
+      	document.getElementById(hidden).style.display='none';
+      		
+		}
+
+
+  </script>
+  <div id="Page1" class="content-header">
+		<div class="menu">
+			<ul>
+				<strong><a href="#"><li class="has-text-link" onclick="show('Page2','Page1')" id="o">Login</li></a></strong>
+				<strong><a href="#" onclick="show('Page1','Page2')"><li class="has-text-link" id="t">Sign up</li></a></strong>
+
+			</ul>
+		</div>
+		<div class="img-container">
+			<img src="logo.png" id="img">
+		</div>
+		<div class="content-text">
+			<div class="user">
+				<input type="text" placeholder="email" class="input">
+				<input type="text" placeholder="username" class="input">
+				<input type="text" placeholder="age" class="input">
+				<input type="text" placeholder="your startup name" class="input">
+				<input type="pass" placeholder="Password" class="input">
+				<input id="submit" type="submit" class="button is-primary" value="login">
+
+			</div>
+		</div>
+	</div>
+	<div id="Page2" class="content-header">
+		<div class="menu">
+			<ul>
+				<strong><a href="#"><li class="has-text-link">Login</li></a></strong>
+				<strong><a href="#" onclick="show('Page1','Page2')"><li class="has-text-link">Sign up</li></a></strong>
+
+			</ul>
+		</div>
+		<div class="img-container">
+			<img src="logo.png" id="img">
+		</div>
+		<div class="content-text">
+			<div class="user">
+				<input type="text" placeholder="username" class="input">
+				<input type="pass" placeholder="*********" class="input">
+				<input id="submit" type="submit" class="button is-primary" value="login">
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
